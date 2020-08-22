@@ -12,7 +12,7 @@ public class MultiplicationService {
     }
 
     public String Prininformation(Multiplication multiplication){
-        logger.info("Check substr");
+        logger.info("Check mult");
         return "a = " + multiplication.getA() + "b = " + multiplication.getB() + "d = " + multiplication.getD();
     }
 
