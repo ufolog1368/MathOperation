@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class AdditionServiceTest {
 
     @Test
-    public void d() {
+    public void dTest() {
         Addition addition = new Addition(67, 34, 101);
         AdditionService additionService = new AdditionService();
         int  expected = 101;
@@ -19,7 +19,7 @@ public class AdditionServiceTest {
     }
 
     @Test
-    public void prininformation() {
+    public void prininformationTest() {
         Addition addition = new Addition(67, 34, 101);
         AdditionService additionService = new AdditionService();
         String  expected = "a = " + addition.getA() + "b = " + addition.getB() + "d = " + addition.getD();
