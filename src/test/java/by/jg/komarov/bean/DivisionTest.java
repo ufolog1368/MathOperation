@@ -60,7 +60,7 @@ public class DivisionTest {
         division.setB(10);
         division.setD(20);
 
-        int expected = 58971;
+        int expected = 58951;
         int actual = division.hashCode();
         assertEquals(expected, actual);
     }
