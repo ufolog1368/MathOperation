@@ -2,20 +2,20 @@ package by.jg.komarov.bean;
 
 import java.util.Objects;
 
-public class Division {
-
+public class Calc {
     private  int a;
     private int b;
-    private int d;
+    private long c;
+    private long d;
 
-    public Division(int a, int b, int d) {
-        this.a = a;
-        this.b = b;
-        this.d = a / b;
+    public Calc() {
     }
 
-    public Division() {
-
+    public Calc(int a, int b, long c, long d) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
     }
 
     public int getA() {
@@ -34,11 +34,19 @@ public class Division {
         this.b = b;
     }
 
-    public int getD() {
+    public long getC() {
+        return c;
+    }
+
+    public void setC(long c) {
+        this.c = c;
+    }
+
+    public long getD() {
         return d;
     }
 
-    public void setD(int d) {
+    public void setD(long d) {
         this.d = d;
     }
 
@@ -46,22 +54,24 @@ public class Division {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Division division = (Division) o;
-        return a == division.a &&
-                b == division.b &&
-                d == division.d;
+        Calc calc = (Calc) o;
+        return a == calc.a &&
+                b == calc.b &&
+                c == calc.c &&
+                d == calc.d;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(a, b, d);
+        return Objects.hash(a, b, c, d);
     }
 
     @Override
     public String toString() {
-        return "Division{" +
+        return "Calc{" +
                 "a=" + a +
                 ", b=" + b +
+                ", c=" + c +
                 ", d=" + d +
                 '}';
     }
