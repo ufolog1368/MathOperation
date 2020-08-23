@@ -56,9 +56,29 @@ public class AdditionTest {
 
     @Test
     public void testHashCode() {
+        var addition = new  Addition();
+        addition.setA(30);
+        addition.setB(10);
+        addition.setD(40);
+
+        int expected = 58971;
+        int actual = addition.hashCode();
+        assertEquals(expected, actual);
+
     }
 
     @Test
     public void testToString() {
+        var addition = new  Addition();
+        addition.setA(30);
+        addition.setB(10);
+        addition.setD(40);
+
+//        System.out.println("addition.toString() = " + addition.toString());
+
+        String expected = "Addition{a=30, b=10, d=40}";
+        String actual = addition.toString();
+        assertEquals(expected, actual);
+
     }
 }
