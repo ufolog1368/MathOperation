@@ -58,7 +58,7 @@ public class DivisionTest {
         var division = new  Division();
         division.setA(30);
         division.setB(10);
-        division.setD(40);
+        division.setD(20);
 
         int expected = 58971;
         int actual = division.hashCode();
@@ -70,10 +70,10 @@ public class DivisionTest {
         var division = new  Division();
         division.setA(30);
         division.setB(10);
-        division.setD(40);
+        division.setD(20);
 
 
-        String expected = "Division{a=30, b=10, d=40}";
+        String expected = "Division{a=30, b=10, d=20}";
         String actual = division.toString();
         assertEquals(expected, actual);
     }
